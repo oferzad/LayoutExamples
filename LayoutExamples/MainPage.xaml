@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="LayoutExamples.MainPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    Title="מסך ראשי">
+
+    <VerticalStackLayout
+        Margin="20,20,20,20"
+        Padding="20"
+        BackgroundColor="CadetBlue"
+        Spacing="20" VerticalOptions="FillAndExpand" HorizontalOptions="Fill">
+        <Button Clicked="Button_Clicked" Text="Frame Example" HorizontalOptions="End"/>
+        <Button Clicked="Button_Clicked" Text="ScrollView Example" HorizontalOptions="Start"/>
+        <Button Clicked="Button_Clicked" Text="Horizontal StackLayout Example" HorizontalOptions="Fill"/>
+        <Button Clicked="Button_Clicked" Text="Grid Example" HorizontalOptions="Fill" />
+        <Button Clicked="Button_Clicked" Text="FlexLayout Example" HorizontalOptions="Center" />
+    </VerticalStackLayout>
+</ContentPage>
