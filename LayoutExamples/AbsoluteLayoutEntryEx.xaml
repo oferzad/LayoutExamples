@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LayoutExamples.AbsoluteLayoutEntryEx"
+             Title="AbsoluteLayoutEntryEx">
+    <VerticalStackLayout VerticalOptions="Center">
+        <Border Padding="10" VerticalOptions="Center" Stroke="Black" StrokeShape="RoundRectangle 10,10,10,10">
+            <AbsoluteLayout>
+
+                <Label x:Name="theTitle" Text="Email" TextColor="Black" AbsoluteLayout.LayoutBounds="0,-0.1"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" FontSize="Micro" IsVisible="False"/>
+                <Label x:Name="theError" Text="Bad Email!" TextColor="Red" AbsoluteLayout.LayoutBounds="0.5,-0.2"
+                 AbsoluteLayout.LayoutFlags="PositionProportional" IsVisible="False"/>
+                <Entry AbsoluteLayout.LayoutFlags="PositionProportional" AbsoluteLayout.LayoutBounds="0,0" x:Name="theEntry" Placeholder="Email" Text="" TextColor="Black" HorizontalTextAlignment="Start" Focused="theEntry_Focused" TextChanged="theEntry_TextChanged"></Entry>
+            </AbsoluteLayout>
+        </Border>
+    </VerticalStackLayout>
+</ContentPage>
